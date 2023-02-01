@@ -8,16 +8,15 @@ const App = () =>{
 
   const [currTime , setcurrTime] = useState(time);
 
-  const updateTime = () =>{
+  setInterval(() => {
     let time = new Date().toLocaleTimeString();
     setcurrTime(time);
-  }
+  }, 1000);
 
 
   return(
     <>
     <h1 className='App'>{currTime}</h1>
-    <button className='btn' onClick={updateTime}>get Time</button>
     </>
   )
 }
