@@ -1,22 +1,23 @@
 import React from "react";
-import dev from '../assets/image.gif';
+import dev from "../assets/image.gif";
 
 const HomePage = () => {
   return (
     <>
       <div className="parent-container">
-        <div className="row h-100 align-items-center">
+        <div className="row h-100 align-items-center gx-0">
           <div className="col-md-6">
-            <img src= {dev} alt="loading....." />
+            <img src={dev} alt="loading....." />
           </div>
           <div className="col-md-6">
-            <h1>
+            <div className="brand-container">
+              <h1>
                 <b>champion programmer</b>
-            </h1>
-
-            <p>
+              </h1>
+              <p>
                 Fullstack <b>Developer</b> and Youtuber
-            </p>
+              </p>
+            </div>
           </div>
         </div>
       </div>
