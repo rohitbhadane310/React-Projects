@@ -7,7 +7,7 @@ const HomePage = () => {
       <div className="parent-container">
         <div className="row h-100 align-items-center gx-0">
           <div className="col-md-6">
-            <img src={dev} alt="loading....." />
+            <img src={dev} alt="loading....." height={550}/>
           </div>
           <div className="col-md-6">
             <div className="brand-container">

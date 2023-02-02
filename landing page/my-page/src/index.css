@@ -1,5 +1,9 @@
+*{
+    background-color: white;
+}
 
 .parent-container{
+    background-color: bisque;
     height: 100vh;
     overflow: hidden;
 }
@@ -15,6 +19,10 @@
     color: #f190b1;
 }
 
+.parent-container p{
+    font-size: 25px;
+}
+
 .brand-container{
    border-left: 5px solid #443947;
    padding-left: 20px;
@@ -22,4 +30,5 @@
 
 .parent-container .row{
     border: 10px solid black;
+    transform: rotate(12deg);
 }
