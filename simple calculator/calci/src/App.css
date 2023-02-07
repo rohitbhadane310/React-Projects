@@ -2,6 +2,7 @@
 .calc{
   width: 320px;
   margin: 100px auto;
+
 }
 
 #answer{
@@ -22,6 +23,7 @@
   font-size: 30px;
   border: 1px solid black;
   float: left;
+  cursor: pointer;
 }
 
 .button1{
