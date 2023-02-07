@@ -14,6 +14,10 @@ const App = () => {
     setResult("");
   }
 
+  const calculate = () =>{
+    setResult(eval(result).toString());
+  }
+
   return (
     <div className='calc'>
     <input type="text" placeholder='0' id='answer' value={result}/>
@@ -34,7 +38,7 @@ const App = () => {
     <input type="button" value="/" className='button' onClick={clickHandle}/>
     <input type="button" value="%" className='button' onClick={clickHandle}/>
     <input type="button" value="Clear" className='button button1' onClick={clearDisplay}/>
-    <input type="button" value="=" className='button button1'/>
+    <input type="button" value="=" className='button button1' onClick={calculate}/>
     
   </div>
   );
