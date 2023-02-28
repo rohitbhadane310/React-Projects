@@ -27,7 +27,6 @@ function PageCom() {
           color: "#f5f5f5",
         }}
       >
-        {/* <span>Search:</span> */}
         <input
           type="text"
           value={value}
