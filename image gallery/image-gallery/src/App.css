@@ -1,16 +1,42 @@
-
-.App{
+.App {
   text-align: center;
 }
 
-.mydiv{
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
+
+.mydiv {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
   margin: 10px 7px;
   box-shadow: 1px 1px 5px gray;
   padding: 10px;
 }
 
-input{
-  width: 60%;
+input {
+  width: 43%;
+  height: 15%;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.btn.btn-success{
+  margin: 1rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  width: 30%;
+  margin: 5px;
 }
