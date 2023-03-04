@@ -16,7 +16,7 @@ function HomePage() {
         <button className='Homebtn'>Get your free material here</button>
        </div>
        <div className='right'>
-             <img className='homeImg' src={moon} alt='logo' />
+             <img className='homeImg' id='moon-img' src={moon} alt='logo' />
        </div>
     </div>
   )
