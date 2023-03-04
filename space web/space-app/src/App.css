@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+
+.TopNav{
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.links{
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a{
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.mybtn{
+  width: 100px;
+  padding: 10px;
+  background-color: hsl(9, 65%, 58%);
+  color: white;
+  cursor: pointer;
+}
+
+.main-page{
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scroll-snap-align: center;
+  color: white;
+  background: url('./img/bg.jpeg');
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.main-page::-webkit-scrollbar{
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-page{
+  height: 100vh;
+  scroll-snap-align: center;
+  width: 900px;
+  display: flex;
 }
