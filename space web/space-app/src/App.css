@@ -5,7 +5,7 @@
 }
 
 .nav{
-  width: 900px;
+  width: 1000px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -20,9 +20,14 @@
 a{
   color: white;
   text-decoration: none;
-  padding: 5px;
+  padding: 15px;
   font-size: 20px;
   cursor: pointer;
+}
+
+a:hover{
+  color: aqua;
+  transition: all 0.2s linear;
 }
 
 .mybtn{
@@ -31,15 +36,18 @@ a{
   background-color: hsl(9, 65%, 58%);
   color: white;
   cursor: pointer;
+  border-radius: 2rem;
+}
+
+.mybtn:hover{
+  background-color: aqua;
+  color: black;
+  transition: all 0.3s linear;
 }
 
 .main-page{
   height: 100vh;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  overflow-y: auto;
   scrollbar-width: none;
-  scroll-snap-align: center;
   color: white;
   background: url('./img/bg.jpeg');
   display: flex;
@@ -71,8 +79,8 @@ h1{
 }
 
 h3{
-  font-size: 24px;
-  width: 150px;
+  font-size: 30px;
+  width: 200px;
   text-align: center;
 }
 
@@ -97,6 +105,12 @@ p{
   border-radius: 2rem;
 }
 
+.Homebtn:hover{
+  background-color: aqua;
+  color: black;
+  transition: all 0.3s linear;
+}
+
 .homeImg{
   height: 500px;
   object-fit: contain;
@@ -111,4 +125,71 @@ p{
   to{
     transform: translateY(20px)
   }
+}
+
+
+
+
+
+
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 90%;
+  color: black;
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.popup input[type="text"],
+.popup input[type="email"],
+.popup input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.popup button {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup button + button {
+  margin-left: 1rem;
+}
+
+.popup button:hover {
+  background: #0062cc;
 }
