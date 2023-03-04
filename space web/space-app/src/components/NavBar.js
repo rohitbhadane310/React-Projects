@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import SignupForm from "./SignUpForm"
 import logo from '../img/logo.png'
-
 import '../App.css'
 
 function NavBar() {
