@@ -57,4 +57,58 @@ a{
   scroll-snap-align: center;
   width: 900px;
   display: flex;
+  justify-content: space-between;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1{
+  font-size: 54px;
+}
+
+h3{
+  font-size: 24px;
+  width: 150px;
+  text-align: center;
+}
+
+.inside-left{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+p{
+  font-size: 20px;
+  color: lightgray;
+}
+
+.Homebtn{
+  background-color: hsl(9, 65%, 58%);
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  height: 30px;
+  font-size: 1rem;
+  border-radius: 2rem;
+}
+
+.homeImg{
+  height: 500px;
+  object-fit: contain;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: animate 2s infinite ease alternate;
+}
+
+@keyframes animate{
+  to{
+    transform: translateY(20px)
+  }
 }
