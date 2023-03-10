@@ -1,36 +1,41 @@
 import React from "react";
-import '../App.css';
+import "../App.css";
 
 function Layout() {
   return (
-    <>
-      <div className="calci_layout">
-        <div className="calci_output">
-          <div className="prev_output"></div>
-          <div className="curr_output"></div>
+    <div className="calculator">
+      <div className="calculator-display"></div>
+      <div className="calculator-keypad">
+        <div className="calculator-keypad-row">
+          <button className="calculator-key">7</button>
+          <button className="calculator-key">8</button>
+          <button className="calculator-key">9</button>
+          <button className="calculator-key">DEL</button>
         </div>
-        <div className="calci_input">
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>DEL</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>+</button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>-</button>
-          <button>.</button>
-          <button>0</button>
-          <button>/</button>
-          <button>*</button>
-          <button>RESET</button>
-          <button> =</button>
+        <div className="calculator-keypad-row">
+          <button className="calculator-key">4</button>
+          <button className="calculator-key">5</button>
+          <button className="calculator-key">6</button>
+          <button className="calculator-key">+</button>
+        </div>
+        <div className="calculator-keypad-row">
+          <button className="calculator-key">1</button>
+          <button className="calculator-key">2</button>
+          <button className="calculator-key">3</button>
+          <button className="calculator-key">-</button>
+        </div>
+        <div className="calculator-keypad-row">
+          <button className="calculator-key">.</button>
+          <button className="calculator-key">0</button>
+          <button className="calculator-key">/</button>
+          <button className="calculator-key">*</button>
+        </div>
+        <div className="calculator-keypad-row">
+          <button className="control-key">RESET</button>
+          <button className="control-key">=</button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
